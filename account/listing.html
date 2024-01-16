@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> MOTOB - Car Selling </title>
+
+
+    <!-- swiper css link  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- link css  -->
+    <link rel="stylesheet" href="../css/style.css">
+
+    <!-- link boxicon -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+
+<body>
+
+
+    <!-- top header section  -->
+
+    <div class="top-header">
+        <div class="out-box">
+            <div class="inside-box">
+                <div class="col-1">
+                    <span><i class='bx bxs-envelope'></i>info@gmail.com</span>
+                    <span><i class='bx bxs-phone-call'></i>+91 123 456 7809</span>
+                    <span><i class='bx bxs-alarm'></i>Sun - Fri (08 AM - 10 PM)</span>
+                </div>
+
+                <div class="col-2">
+                    <a href="#"><i class='bx bx-arrow-to-right'></i>Login</a>
+                    <a href="#"><i class='bx bxs-user'></i>Register</a>
+                    <span>Follow Us:</span>
+                    <div class="social">
+                        <i class='bx bxl-facebook'></i>
+                        <i class='bx bxl-twitter'></i>
+                        <i class='bx bxl-instagram'></i>
+                        <i class='bx bxl-linkedin'></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- navbar section  -->
+
+    <header class="header">
+        <div class="logo">
+            <img src="../img/logo/logo.png" alt="">
+        </div>
+
+        <nav>
+            <div class="navbar">
+                <ul class="navlink">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../about.html">About</a></li>
+                    <li><a href="#">Inventory<i class='bx bx-chevron-down'></i></a>
+                        <ul class="drop-down">
+                            <li><a href="../inventory_grid.html">Inventory Grid</a></li>
+                            <li><a href="../inventory_list.html">Inventory List</a></li>
+                            <li><a href="../inventory_single.html">Inventory Single</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#" class="active">Pages<i class='bx bx-chevron-down'></i></a>
+                        <ul class="drop-down">
+                            <li><a href="../about.html">About</a></li>
+                            <li><a href="#">Car Listing<i class='bx bx-chevron-down chev'></i></a>
+                                <ul class="drop-down-two">
+                                    <li><a href="#">Listing Grid</a></li>
+                                    <li><a href="#">Listing List</a></li>
+                                    <li><a href="#">Listing Single</a></li>
+                                    <li><a href="#">Compare</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Account</a></li>
+                            <li><a href="#" class="active">My Account<i class='bx bx-chevron-down chev'></i></a>
+                                <ul class="drop-down-three">
+                                    <li><a href="../account/dashbord.html">Dashbord</a></li>
+                                    <li><a href="../account/profile.html">My Profile</a></li>
+                                    <li><a href="../account/listing.html" class="active">My Listing</a></li>
+                                    <li><a href="../account/addlisting.html">Add Listing</a></li>
+                                    <li><a href="#">My Favourites</a></li>
+                                    <li><a href="#">Message</a></li>
+                                    <li><a href="#">Setting</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Authentication<i class='bx bx-chevron-down chev'></i></a>
+                                <ul class="drop-down-four">
+                                    <li><a href="#">Login</a></li>
+                                    <li><a href="#">Register</a></li>
+                                    <li><a href="#">Forgot Password</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Services<i class='bx bx-chevron-down chev'></i></a>
+                                <ul class="drop-down-five">
+                                    <li><a href="#">Services</a></li>
+                                    <li><a href="#">Services Single</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Dealer<i class='bx bx-chevron-down chev'></i></a>
+                                <ul class="drop-down-six">
+                                    <li><a href="#">Dealer</a></li>
+                                    <li><a href="#">Dealer Single</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Extra Pages</a></li>
+                            <li><a href="#">Our Team</a></li>
+                            <li><a href="#">Pricing plan</a></li>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Testimonials</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Shop<i class='bx bx-chevron-down'></i></a>
+                        <ul class="drop-down">
+                            <li><a href="#">Shop</a></li>
+                            <li><a href="#">Shop Casting</a></li>
+                            <li><a href="#">Shop Chackout</a></li>
+                            <li><a href="#">Shop Single</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Blog<i class='bx bx-chevron-down'></i></a>
+                        <ul class="drop-down">
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Blog Single</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="others">
+                <i class='bx bx-search'></i>
+                <i class='bx bx-cart-download cart'></i>
+                <button class="addbtn"><i class='bx bx-plus-circle'></i>Add Listing</button>
+                <i class='bx bx-menu-alt-left' id="menubtn"></i>
+            </div>
+        </nav>
+    </header>
+
+
+    
+    <!-- My Listing page section start  -->
+
+    <div class="inventory">
+        <h2>My Listing</h2>
+        <div class="link">
+            <a href="../index.html">Home</a>
+            <span>>>></span>
+            <p>My Listing</p>
+        </div>
+    </div>
+
+
+    <!-- My Listing page section  -->
+
+    <section class="deshbord">
+        <div class="desh-row">
+            <div class="side-one">
+                <div class="profile">
+                    <img src="../img/dashboard/user.jpg" alt="">
+                    <h6>Antoni Jonson</h6>
+                    <span>antoni@example.com</span>
+                    <i class="bx bx-camera"></i>
+                </div>
+
+                <div class="box">
+                    <a href="../account/dashbord.html"><i class="bx bx-error-alt"></i> Dashbord</a>
+                </div>
+
+                <div class="box">
+                    <a href="../account/profile.html"><i class="bx bx-user"></i>My Profile</a>
+                </div>
+                <div class="box activated">
+                    <a href="../account/listing.html"><i class="bx bx-data"></i>My Listing</a>
+                </div>
+                <div class="box">
+                    <a href="../account/addlisting.html"><i class="bx bx-plus-circle"></i>Add Listing</a>
+                </div>
+                <div class="box">
+                    <a href="#"><i class="bx bx-heart"></i>My Favourites</a>
+                </div>
+                <div class="box">
+                    <a href="#"><i class="bx bx-chat"></i>Message</a>
+                </div>
+                <div class="box">
+                    <a href="#"><i class="bx bx-cog"></i>Setting</a>
+                </div>
+                <div class="box">
+                    <a href="#"><i class="bx bx-log-out"></i>Logout</a>
+                </div>
+            </div>
+
+            <div class="side_two">
+                <div class="side-row-two">
+                    <h5>Recent Listing</h5>
+                    <div class="table">
+                        <div class="tb-row">
+                            <div class="tb-col">
+                                <h6>Car Info</h6>
+                                <h6>Brand</h6>
+                                <h6>Publish</h6>
+                                <h6>Price</h6>
+                                <h6>Views</h6>
+                                <h6>Status</h6>
+                                <h6>Action</h6>
+                            </div>
+                            <div class="tb-col">
+                                <div class="info">
+                                    <img src="../img/dashboard/01.jpg" alt="">
+                                    <p>Mercedes Banz Car <br> <span>Car ID: #123456</span></p>
+                                </div>
+                                <span>Ferrari</span>
+                                <span>5 days ago</span>
+                                <span>$50,650</span>
+                                <span>350k</span>
+                                <a href="#">Active</a>
+
+                                <div class="icon">
+                                    <i class="bx bx-low-vision"></i>
+                                    <i class="bx bxs-eyedropper"></i>
+                                    <i class="bx bx-message-alt-x"></i>
+                                </div>
+                            </div>
+                            <div class="tb-col">
+                                <div class="info">
+                                    <img src="../img/dashboard/02.jpg" alt="">
+                                    <p>Mercedes Banz Car <br> <span>Car ID: #123456</span></p>
+                                </div>
+                                <span>Ferrari</span>
+                                <span>5 days ago</span>
+                                <span>$50,650</span>
+                                <span>350k</span>
+                                <a href="#">Active</a>
+                                
+                                <div class="icon">
+                                    <i class="bx bx-low-vision"></i>
+                                    <i class="bx bxs-eyedropper"></i>
+                                    <i class="bx bx-message-alt-x"></i>
+                                </div>
+                            </div>
+                            <div class="tb-col">
+                                <div class="info">
+                                    <img src="../img/dashboard/03.jpg" alt="">
+                                    <p>Mercedes Banz Car <br> <span>Car ID: #123456</span></p>
+                                </div>
+                                <span>Ferrari</span>
+                                <span>5 days ago</span>
+                                <span>$50,650</span>
+                                <span>350k</span>
+                                <a href="#">Active</a>
+                                
+                                <div class="icon">
+                                    <i class="bx bx-low-vision"></i>
+                                    <i class="bx bxs-eyedropper"></i>
+                                    <i class="bx bx-message-alt-x"></i>
+                                </div>
+                            </div>
+                            <div class="tb-col">
+                                <div class="info">
+                                    <img src="../img/dashboard/04.jpg" alt="">
+                                    <p>Mercedes Banz Car <br> <span>Car ID: #123456</span></p>
+                                </div>
+                                <span>Ferrari</span>
+                                <span>5 days ago</span>
+                                <span>$50,650</span>
+                                <span>350k</span>
+                                <a href="#">Active</a>
+                                
+                                <div class="icon">
+                                    <i class="bx bx-low-vision"></i>
+                                    <i class="bx bxs-eyedropper"></i>
+                                    <i class="bx bx-message-alt-x"></i>
+                                </div>
+                            </div>
+                            <div class="tb-col">
+                                <div class="info">
+                                    <img src="../img/dashboard/05.jpg" alt="">
+                                    <p>Mercedes Banz Car <br> <span>Car ID: #123456</span></p>
+                                </div>
+                                <span>Ferrari</span>
+                                <span>5 days ago</span>
+                                <span>$50,650</span>
+                                <span>350k</span>
+                                <a href="#">Active</a>
+                                
+                                <div class="icon">
+                                    <i class="bx bx-low-vision"></i>
+                                    <i class="bx bxs-eyedropper"></i>
+                                    <i class="bx bx-message-alt-x"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- footer section  -->
+
+    <div class="footer">
+        <div class="footer-row">
+            <div class="footer-col">
+                <img src="../img/logo/logo-light.png" alt="">
+                <p class="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit, ducimus. Sunt delectus eaque minus?</p>
+                <span><i class="bx bx-phone"></i>+91 123 456 7809</span>
+                <span><i class="bx bx-location-plus"></i>25/B MG Road, Gurugron</span>
+                <span><i class="bx bx-envelope"></i>info@gmail.com</span>
+            </div>
+
+            <div class="footer-col">
+                <h5>Quick Links</h5>
+                <a href="#"><i class='bx bx-chevron-right'></i>About Us</a>
+                <a href="#"><i class='bx bx-chevron-right'></i>Update News</a>
+                <a href="#"><i class='bx bx-chevron-right'></i>Testimonials</a>
+                <a href="#"><i class='bx bx-chevron-right'></i>Terms Of Services</a>
+                <a href="#"><i class='bx bx-chevron-right'></i>Privacy Policy</a>
+                <a href="#"><i class='bx bx-chevron-right'></i>Our Dealers</a>
+            </div>
+
+            <div class="footer-col">
+                <h5>Support Center</h5>
+                <a href="#"><i class='bx bx-chevron-right'></i>FAQ's</a>
+                <a href="#"><i class='bx bx-chevron-right'></i>Affiliates</a>
+                <a href="#"><i class='bx bx-chevron-right'></i>Booking Tips</a>
+                <a href="#"><i class='bx bx-chevron-right'></i>Sell Vehicles</a>
+                <a href="#"><i class='bx bx-chevron-right'></i>Contact Us</a>
+                <a href="#"><i class='bx bx-chevron-right'></i>Sitmap</a>
+            </div>
+
+            <div class="footer-col">
+                <h5>Newsletter</h5>
+                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <input type="text" placeholder="Your Email">
+                <button>Subscribe Now <i class='bx bxl-telegram' ></i></button>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; Copyright 2023 <span>MOTOB</span> All Right Reserved.</p>
+            <div class="socal">
+                <i class="bx bxl-facebook"></i>
+                <i class="bx bxl-twitter"></i>
+                <i class="bx bxl-linkedin"></i>
+                <i class="bx bxl-youtube"></i>
+            </div>
+        </div>
+
+
+        <!-- scriil top butoon  -->
+
+        <a href="#" class="scrollBtn">
+            <i class='bx bxs-chevrons-up'></i>
+        </a>
+
+    </div>
+
+
+
+    <!-- swiper ja link  -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- custum js  -->
+    <script src="../js/script.js"></script>
+</body>
+
+</html>
